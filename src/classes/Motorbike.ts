@@ -16,7 +16,6 @@ class Motorbike extends Vehicle {
   weight: number;
   topSpeed: number;
   wheels: Wheel[];
-  // wheeli?: void;
 
   // TODO: Create a constructor that accepts the properties of the Motorbike class
   // TODO: The constructor should call the constructor of the parent class, Vehicle
@@ -31,8 +30,7 @@ class Motorbike extends Vehicle {
     year: number,
     weight: number,
     topSpeed: number,
-    wheels: Wheel[],
-    // wheeli?: void,
+    wheels: Wheel[]
   ) {
     super();
     this.vin = vin;
@@ -49,9 +47,9 @@ class Motorbike extends Vehicle {
       this.wheels = wheels;
     }
   }
-  // public wheelie(): void {
-  //   return console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
-  // }
+  wheelie():void {
+    console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+  }
 
   // TODO: Implement the wheelie method
   // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
@@ -62,7 +60,7 @@ class Motorbike extends Vehicle {
   // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
   override printDetails(): void {
     super.printDetails();
-    
+
     console.log(`VIN: ${this.vin}`);
     console.log(`Color: ${this.color}`);
     console.log(`Make: ${this.make}`);
@@ -79,6 +77,10 @@ class Motorbike extends Vehicle {
     );
   }
 }
+
+// Motorbike.wheelie(): void {
+//   return console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+// }
 
 // Export the Motorbike class as the default export
 export default Motorbike;
