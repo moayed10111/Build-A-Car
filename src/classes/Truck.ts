@@ -51,7 +51,7 @@ class Truck extends Vehicle implements AbleToTow {
     const weight = vehicle.weight;
 
     if (weight <= this.towingCapacity) {
-      console.log(`${make} ${make}is been towed`);
+      console.log(`${make} ${model} is been towed`);
     } else {
       console.log(`${make} ${model} is too heavey to be towed`);
     }

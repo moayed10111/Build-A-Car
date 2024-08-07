@@ -43,3 +43,5 @@ me via email or visit my GitHub profile.
 -Email: moayed10111@gmail.com
 
 -GitHub: https://github.com/moayed10111
+
+-Link to the video: https://go.screenpal.com/watch/cZjiYLV96As

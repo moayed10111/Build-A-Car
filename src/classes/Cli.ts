@@ -403,7 +403,7 @@ class Cli {
             }
           }
           if (truck) {
-            console.log("running function");
+            console.log("Selecting a vehicle to tow");
             this.findVehicleToTow(truck);
             return;
           } else {
