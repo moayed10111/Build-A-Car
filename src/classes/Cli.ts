@@ -409,7 +409,7 @@ class Cli {
             motorbike.wheelie();
             return;
           } else {
-            console.log("mmmmmm");
+            console.log("Only a motorbike can do a wheelie");
           }
         } else if (answers.action === "Tow a vehicle") {
           let truck: Truck | undefined;
@@ -425,7 +425,7 @@ class Cli {
             this.findVehicleToTow(truck);
             return;
           } else {
-            console.log("This interaction is only avalable to trucks");
+            console.log("Your car is not equipped to tow");
           }
         }
         // else if (answers.action === 'wheelie') {
