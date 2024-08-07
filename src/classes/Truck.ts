@@ -45,7 +45,7 @@ class Truck extends Vehicle implements AbleToTow {
     this.topSpeed = topSpeed;
     this.towingCapacity = towingCapacity;
 
-    if (wheels.length !== 2) {
+    if (wheels.length !== 4) {
       this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
     } else {
       this.wheels = wheels;
@@ -57,6 +57,15 @@ class Truck extends Vehicle implements AbleToTow {
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
+    const make = vehicle.make;
+    const model = vehicle.model;
+    const weight = vehicle.weight;
+
+    if (weight <= this.towingCapacity){
+      console.log(`${make} ${make}is been towed`)
+    } else{
+      console.log(`${make} ${model} is too heavey to be towed`)
+    }
   }
 
   // TODO: Override the printDetails method from the Vehicle class
